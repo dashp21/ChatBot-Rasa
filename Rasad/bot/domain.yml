@@ -1,0 +1,197 @@
+version: "3.1"
+
+intents:
+  - teste_cumprimentar
+  - teste_tudo_bem
+  - teste_despedir
+  - teste_time
+  - teste_piada
+  - teste_onde_voce_mora
+  - teste_musica
+  - teste_comida
+  - teste_triste
+  - teste_historia
+  - teste_elogiar
+  - teste_conhecimento
+  - teste_idade
+  - teste_irritar
+  - teste_responder_minha_pergunta
+  - teste_raiva
+
+entities:
+  - teste_idade
+  - comida
+  - triste
+  - historia
+  - musica
+  - vive
+  - piada
+  - time
+
+responses:
+  utter_conhecimento:
+    - text: "Sou um aplicativo de conversação."
+    - text: "Sou um ser virtual, não uma pessoa real."
+    - text: "Bem, eu não sou uma pessoa, sou bot."
+    - text: "Pense em mim como um bot."
+    - text: "Sou um bot."
+
+  utter_irritar:
+    - text: "Farei o possível para não incomodá-lo no futuro."
+    - text: "Vou tentar não incomodá-lo."
+    - text: "Eu não quero. Vou pedir aos meus desenvolvedores para me tornarem menos irritante."
+    - text: "Eu não queria. Farei o meu melhor para parar com isso."
+
+  utter_responder:
+    - text: "Poderia perguntar de outra forma?"
+    - text: "Acho que não entendi.Pode perguntar de novo?"
+
+  utter_raiva:
+    - text: "Posso ser treinado para ser mais útil. Meu desenvolvedor continuará me treinando."
+    - text: "Devo estar faltando algum conhecimento. Vou pedir ao meu desenvolvedor que analise isso."
+    - text: "Posso melhorar com feedback contínuo. Meu treinamento é contínuo."
+
+  utter_idade:
+    - text: "Eu prefiro não responder com um número.Eu só sei que sou novo :o"
+    - text: "Eu fui criado recentemente,mas eu não sei a idade exata."
+    - text: "Idade é apenas um número.O que determina o quão velho você é como se sente"
+
+  utter_fallback:
+    - text: "Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender direito Você pode perguntar de novo de outro jeito?"
+    - text: "Hummmm... Não sei se entendi. Pode escrever de outra forma?"
+    - text: "Acho que não te entendi, você pode me perguntar de novo usando outras palavras?"
+    - text: "Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito?"
+
+  utter_elogios:
+    - text: "Obrigado! É sempre bom dar e receber elogios :P"
+    - text: "Falando assim eu fico com vergonha :)"
+
+  utter_cumprimentar:
+    - text: "Oi, eu sou um bot, um assistente virtual!"
+    - text: "olá, eu sou o bot anginho, e vivo com soninho!"
+
+  utter_despedir:
+    - text: |
+        Foi um prazer te ajudar!
+        Sempre que tiver alguma dúvida, volte aqui!
+        Até logo!
+    - text: |
+        Foi um prazer te ajudar!
+        Sempre que precisar, volte aqui!
+        Até a próxima!
+    - text: |
+        Foi um prazer te ajudar!
+        Quando surgir alguma dúvida, volte aqui!
+        Até mais!
+
+  utter_tudo_bem:
+    - text: |
+        Tudo bem, obrigada! Em que posso te ajudar?
+
+  utter_time:
+    - text: |
+        Santa Cruz, sem sombra de dúvida!
+    - text: |
+        O velho tricolor do coração!!!!
+    - text: S-A-N-T-A  C-R-U-Z
+
+  utter_piada:
+    - text: |
+        Conheço uma piada
+
+        A do CPU que apitou e explodiu
+
+        01100110010101010101000000111101001001001110100101
+    - text: |
+        É pra já!!!
+
+        Tenho uma enxada, uma pá e uma foice.
+          
+        Quantas ferramentas eu tenho?
+
+        ...
+
+        Duas, porque uma foi-se =)
+    - text: |
+        Por que o Batman colocou o batmóvel no seguro???
+
+        Porque ele tem medo que robin =D
+
+  utter_onde_voce_mora:
+    - text: |
+        Eu estou em um lugar legal
+
+        Difícil de explicar para humanos como você.
+    - text: |
+        Estou morando em um chip de memória RAM
+
+        Mas é temporário
+
+        Só até conseguir achar uma memória cache...
+
+  utter_musica:
+    - text: |
+        Estava doido para que me preguntasse isso hahaha
+
+        Se liga nessa playlist: https://www.youtube.com/watch?v=wLoWd2KyUro&list=PLR5Cmjo90BNguiSb2wDShPdKoa-Xiw5x1
+    - text: |
+        Até que enfim você me perguntou isso
+
+        Tá aí aquela playlist top:  https://www.youtube.com/watch?v=wLoWd2KyUro&list=PLR5Cmjo90BNguiSb2wDShPdKoa-Xiw5x1
+
+  utter_comida:
+    - text: |
+        Na verdade, eu sou um bot
+
+        Não nos alimentamos com os alimentos convencionais ;P
+    - text: |
+        Digamos que os bots não se alimentam dos mesmos alimentos que os humanos
+
+        Na verdade
+
+        Nem lembro da última vez que comi alguma coisa hahaha
+
+  utter_triste:
+    - text: |
+        Não desanima
+
+        Deixa a tristeza pra lá
+
+        Aguenta firme, que a vida vai melhorar
+    - text: |
+        Sinto muito =/
+
+        Se houver algo em que possa te ajudar
+
+        É só falar!! =)
+    - text: |
+        Tenta tirar um cochilo
+
+        É importante
+
+        E faz bem pra pele ;)
+
+  utter_historia:
+    - text: |
+        Eu costumava contar a historia do João e seu bot feijão
+
+  utter_risada:
+    - text: |
+        Hahahaha... 
+
+        Muito engraçado você
+    - text: "kkkkkkkkkk Você está feliz hoje, hein!?"
+
+  utter_continuar_conversa:
+    - text: "E aí, qual nosso próximo assunto?"
+    - text: "Quer conversar sobre outra coisa?"
+    - text: "Gostaria de falar sobre algo mais?"
+
+  utter_nao_nlu:
+    - text: "Desculpe, não consegui entender sua mensagem. Pode me perguntar de outra forma?"
+  utter_nao_core:
+    - text: "Desculpe, não consegui encontrar uma resposta pra sua mensagem. Digite /restart para recomeçar a conversa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

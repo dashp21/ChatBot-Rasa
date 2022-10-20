@@ -1,0 +1,28 @@
+# The config recipe.
+# https://rasa.com/docs/rasa/model-configuration/
+recipe: default.v1
+
+language: pt
+pipeline:
+  - name: SpacyNLP
+    model: pt_core_news_sm
+  - name: SpacyTokenizer
+  - name: CountVectorsFeaturizer
+  - name: DIETClassifier
+    epochs: 200
+    random_seed: 2
+  - name: EntitySynonymMapper
+  - name: FallbackClassifier
+    threshold: 0.4
+
+policies:
+  - name: MemoizationPolicy
+    max_history: 3
+  - name: TEDPolicy
+    max_history: 3
+    epochs: 60
+    random_seed: 5
+    validation_split: 0.2
+  - name: RulePolicy
+    core_fallback_threshold: 0.4
+    enable_fallback_prediction: false

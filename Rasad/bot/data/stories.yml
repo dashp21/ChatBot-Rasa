@@ -1,0 +1,98 @@
+version: "3.1"
+
+stories:
+  - story: cumprimentar
+    steps:
+      - intent: teste_cumprimentar
+      - action: utter_cumprimentar
+
+  - story: Oi Tudo Bem
+    steps:
+      - intent: teste_tudo_bem
+      - action: utter_tudo_bem
+
+  - story: Despedir
+    steps:
+      - intent: teste_despedir
+      - action: utter_despedir
+
+  - story: time
+    steps:
+      - intent: teste_time
+      - action: utter_time
+      - action: utter_continuar_conversa
+
+  - story: piada
+    steps:
+      - intent: teste_piada
+      - action: utter_piada
+      - action: utter_continuar_conversa
+
+  - story: onde_voce_mora
+    steps:
+      - intent: teste_onde_voce_mora
+      - action: utter_onde_voce_mora
+      - action: utter_continuar_conversa
+
+  - story: musica
+    steps:
+      - intent: teste_musica
+      - action: utter_musica
+      - action: utter_continuar_conversa
+
+  - story: comida
+    steps:
+      - intent: teste_comida
+      - action: utter_comida
+      - action: utter_continuar_conversa
+
+  - story: triste
+    steps:
+      - intent: teste_triste
+      - action: utter_triste
+      - action: utter_continuar_conversa
+
+  - story: historia
+    steps:
+      - intent: teste_historia
+      - action: utter_historia
+      - action: utter_continuar_conversa
+
+  - story: Tudo Bem
+    steps:
+      - intent: teste_tudo_bem
+      - action: utter_tudo_bem
+
+  - story: elogios
+    steps:
+      - intent: teste_elogiar
+      - action: utter_elogios
+      - action: utter_continuar_conversa
+
+  - story: conhecimento
+    steps:
+      - intent: teste_conhecimento
+      - action: utter_conhecimento
+      - action: utter_continuar_conversa
+
+  - story: idade
+    steps:
+      - intent: teste_idade
+      - action: utter_idade
+      - action: utter_continuar_conversa
+
+  - story: irritar
+    steps:
+      - intent: teste_irritar
+      - action: utter_irritar
+
+  - story: responder
+    steps:
+      - intent: teste_responder_minha_pergunta
+      - action: utter_responder
+      - action: utter_continuar_conversa
+
+  - story: raiva
+    steps:
+      - intent: teste_raiva
+      - action: utter_raiva
